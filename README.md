@@ -15,4 +15,4 @@ It will create a normal user `kiosk`, install software (check the script) and se
 Change the url at the bottom of the script, where it sais https://neave.tv/
 
 ## Is it secure?
-No. Although it will run as a normal user (and I suggest you don't leave a keyboard and mouse hanging around), there will be the possibility of plugin' in a mini keyboard, opening a terminal and open some nasty things. Security is your thing ;-) 
+No. Although it will run as a normal user (and I suggest you don't leave a keyboard and mouse hanging around), there will be the possibility of plugin' in a mini keyboard, opening a terminal and opening some nasty things. Security is your thing ;-) 
