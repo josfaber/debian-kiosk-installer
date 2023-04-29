@@ -42,6 +42,7 @@ fi
 cat > /etc/lightdm/lightdm.conf << EOF
 [SeatDefaults]
 autologin-user=kiosk
+user-session=openbox
 EOF
 
 # create autostart
@@ -58,8 +59,6 @@ do
   chromium \
     --no-first-run \
     --start-maximized \
-    --window-position=0,0 \
-    --window-size=1024,768 \
     --disable \
     --disable-translate \
     --disable-infobars \
