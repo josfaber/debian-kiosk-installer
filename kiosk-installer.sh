@@ -56,6 +56,7 @@ unclutter -idle 0.1 -grab -root &
 
 while :
 do
+  xrandr --auto
   chromium \
     --no-first-run \
     --start-maximized \
