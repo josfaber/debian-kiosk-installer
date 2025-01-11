@@ -40,9 +40,9 @@ if [ -e "/etc/lightdm/lightdm.conf" ]; then
   mv /etc/lightdm/lightdm.conf /etc/lightdm/lightdm.conf.backup
 fi
 cat > /etc/lightdm/lightdm.conf << EOF
-[SeatDefaults]
-autologin-user=kiosk
-user-session=openbox
+[Seat:*]
+autologin-user=jos
+autologin-session=openbox
 EOF
 
 # create autostart
