@@ -41,7 +41,7 @@ if [ -e "/etc/lightdm/lightdm.conf" ]; then
 fi
 cat > /etc/lightdm/lightdm.conf << EOF
 [Seat:*]
-autologin-user=jos
+autologin-user=kiosk
 autologin-session=openbox
 EOF
 
