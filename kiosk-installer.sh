@@ -17,7 +17,7 @@ apt-get install \
 mkdir -p /home/kiosk/.config/openbox
 
 # create group
-groupadd kiosk
+groupadd -f kiosk
 
 # create user if not exists
 id -u kiosk &>/dev/null || useradd -m kiosk -g kiosk -s /bin/bash 
