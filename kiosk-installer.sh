@@ -41,6 +41,7 @@ if [ -e "/etc/lightdm/lightdm.conf" ]; then
 fi
 cat > /etc/lightdm/lightdm.conf << EOF
 [Seat:*]
+xserver-command=X -nocursor -nolisten tcp
 autologin-user=kiosk
 autologin-session=openbox
 EOF
@@ -60,6 +61,8 @@ while :
 do
   xrandr --auto
   chromium \
+    --noerrdialogs \
+    --no-memcheck \
     --no-first-run \
     --start-maximized \
     --disable \
@@ -69,8 +72,7 @@ do
     --disable-save-password-bubble \
     --disable-session-crashed-bubble \
     --incognito \
-    --kiosk \
-    --app=$KIOSK_URL
+    --kiosk $KIOSK_URL
   sleep 5
 done &
 EOF
