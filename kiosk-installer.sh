@@ -5,7 +5,7 @@ apt-get update
 
 # get software
 apt-get install \
-	unclutter \
+    unclutter \
     xorg \
     chromium \
     openbox \
