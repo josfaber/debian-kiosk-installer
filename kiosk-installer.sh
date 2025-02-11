@@ -69,7 +69,7 @@ do
     --disable-save-password-bubble \
     --disable-session-crashed-bubble \
     --incognito \
-    --kiosk 
+    --kiosk \
     --app=$KIOSK_URL
   sleep 5
 done &
