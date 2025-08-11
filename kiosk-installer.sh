@@ -65,14 +65,13 @@ do
     --no-memcheck \
     --no-first-run \
     --start-maximized \
-    --disable \
     --disable-translate \
     --disable-infobars \
     --disable-suggestions-service \
     --disable-save-password-bubble \
     --disable-session-crashed-bubble \
     --incognito \
-    --kiosk $KIOSK_URL
+    --kiosk "$KIOSK_URL"
   sleep 5
 done &
 EOF
